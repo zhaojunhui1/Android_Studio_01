@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/search_data"
+            android:layout_width="151dp"
+            android:layout_height="171dp"
+            android:background="@drawable/shape_bg"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/search_imageView"
+                android:layout_width="130dp"
+                android:layout_height="102dp"
+                fresco:roundedCornerRadius="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"/>
+            <TextView
+                android:id="@+id/search_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="数据"
+                android:textSize="12sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:layout_marginTop="10dp"
+                android:textColor="#666666"
+                />
+            <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+                android:layout_marginTop="6dp">
+            <TextView
+                android:id="@+id/search_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="数据"
+                android:textSize="14dp"
+                android:layout_alignParentLeft="true"
+                android:textColor="#ff0000"
+                android:layout_marginLeft="10dp"
+                android:paddingBottom="8dp"
+                />
+            <TextView
+                android:id="@+id/search_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="数据"
+                android:textSize="10dp"
+                android:textColor="#666666"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:paddingBottom="8dp"
+                />
+        </RelativeLayout>
+        </LinearLayout>
+
+
+</LinearLayout>
